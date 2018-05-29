@@ -1,1 +1,1 @@
-type netmgrd_data_file, file_type;
+type proc_touchpanel, fs_type, sysfs_type;
