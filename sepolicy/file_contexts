@@ -9,3 +9,10 @@
 
 # rmt_storage debugfs
 /sys/kernel/debug/rmt_storage(/.*)?                  u:object_r:qti_debugfs:s0
+
+# Light
+/sys/devices/soc/78b6000\.i2c/i2c-2/2-[0-9a-f]+/leds(/.*)?      u:object_r:sysfs_leds:s0
+/sys/devices/soc/leds-qpnp-[0-9]+/leds(/.*)?				    u:object_r:sysfs_leds:s0
+/sys/devices/soc/[a-z0-9]+\.sdhci/leds(/.*)?                    u:object_r:sysfs_leds:s0
+/sys/devices/soc/soc:gpio-leds/leds(/.*)?                       u:object_r:sysfs_leds:s0
+
