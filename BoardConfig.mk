@@ -227,7 +227,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery/fstab.qcom
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += \
+    $(VENDOR_PATH)/sepolicy/vendor
 
 # Treble
 ENABLE_VENDOR_IMAGE := true
