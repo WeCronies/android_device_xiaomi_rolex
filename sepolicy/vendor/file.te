@@ -1,5 +1,3 @@
-# Rild
 type rild_file, file_type, vendor_file_type;
-
-# Rmt
 type debugfs_rmt, debugfs_type, fs_type;
+type vendor_keylayout_file, vendor_file_type, file_type;
