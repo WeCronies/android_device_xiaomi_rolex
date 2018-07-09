@@ -673,3 +673,7 @@ service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootde
 # Logdumpd is enabled only for userdebug non-perf build
 on property:ro.logdumpd.enabled=1
     start logdumpd
+
+# Set BFQ Io
+on property:dev.bootcomplete=1
+    setprop sys.io.scheduler "bfq"
